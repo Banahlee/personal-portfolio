@@ -1,0 +1,57 @@
+.projects-container{
+    
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.projects{
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.content-2{
+    flex-wrap: wrap-reverse;
+}
+
+.description-1, .description-2, .description-3 {
+    padding: 100px 150px;
+    height: 250px;
+    width: 400px;
+    background-color: lime;
+    
+}
+
+.img-link-1, .img-link-2, .img-link-3 {
+    width: 250px;
+    height: 250px;
+    padding: 100px;
+    background-color: mediumseagreen;
+
+}
+
+
+
+.navbar-brand:hover{
+    animation: spin 3s infinite linear;
+}
+
+.navbar-brand:hover span{
+    animation: spin 3s infinite reverse linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(1turn);
+    }
+}

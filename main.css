@@ -1,0 +1,244 @@
+:root{
+    --mainRed: rgb(230, 48, 48);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+
+}
+
+*:focus{
+    outline: none;
+}
+
+.navbar{
+    background-color: rgb(47, 47, 47);
+    
+}
+
+.navbar-brand{
+    border-radius: 50%;
+    border: 2px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar-brand:hover{
+    opacity: 0.7;
+    transition: 0.5s all ease;
+}
+
+.scrolling-nav{
+    background-color: whitesmoke;
+    box-shadow: 0px 3px 16px rgb(0, 0, 0, .1);
+    transition: 0.5s all ease;
+    
+    
+}
+
+.scrolling-nav .navbar-brand{
+    border: 2px solid #313131
+}
+
+.scrolling-nav div a {
+    color: #313131 !important;
+    transition: 0.5s all ease;
+    
+}
+
+.scrolling-nav div a:hover{
+    color: black;
+}
+
+.nav-item::after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: var(--mainRed);
+    transition: width 0.5s;
+    
+}
+
+.nav-item:hover::after{
+    width: 100%;
+    transition: width 0.5s;
+}
+
+.intro-container{
+    margin: auto;
+    
+    height: 95vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    
+}
+
+.intro-text{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    flex: 1;
+    
+}
+
+.intro-header{
+    font-size: 5rem;
+    animation: drop 1.5s ease;
+    margin: auto;
+    background: linear-gradient(to right, black, rgb(236, 236, 236));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-sub{
+    animation: rise 2s ease;
+    margin: auto;
+    
+}
+
+.big-circle{
+    position: absolute;
+    top: -20%;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.4;
+    height: 80%;
+    animation: dropCircle 3s ease;
+    overflow-x:hidden;
+}
+
+.mid-circle{
+    position: absolute;
+    top: 30%;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+    height: 60%;
+    animation: riseCircle 2s ease;
+    overflow-x:hidden;
+}
+
+.sml-circle{
+    position: absolute;
+    bottom: 0px;
+    right: 30%;
+    z-index: -1;
+    opacity: 0.4;
+    height: 30%;
+    animation: riseCircle 0.5s ease;
+    overflow-x:hidden;
+}
+
+.main-cta{
+    background-color:  var(--mainRed);
+    color: white;
+    padding: 12px 26px;
+    border-radius: 28px;
+    border: 2px solid transparent;
+    margin: 1rem;
+    margin-top: 2.5rem;
+    animation: rise 2s ease;
+    display: inline-block;
+    font-family: "Montserrat";
+}
+
+.main-cta:hover{
+    color: black;
+    transition: all 0.5s ease;
+    background-color: transparent;
+    border: 2px solid  rgb(230, 48, 48);
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes rise {
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes dropCircle {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 0.4;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes riseCircle {
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    100%{
+        opacity: 0.4;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-device-width: 480px){
+    .intro-header{
+        font-size: 2.7rem;
+        
+    }
+    .intro-sub{
+        font-size: 1.5rem;
+        
+    }
+    .intro-container{
+        height: 60vh;
+        
+    }
+    .big-circle{
+        height: 60%;
+        overflow-x:hidden;
+    }
+    .mid-circle{
+        height: 40%;
+    }
+    .sml-circle{
+        right: 10%;
+
+    }
+}
+
+@media screen and (max-width: 1024){
+    .intro-container{
+        height: 60vh;
+        
+    }
+    .big-circle{
+        height: 60%;
+        overflow-x:hidden;
+    }
+    .mid-circle{
+        height: 40%;
+        overflow-x:hidden;
+    }
+    .sml-circle{
+        right: 10%;
+        overflow-x:hidden;
+    }
+}

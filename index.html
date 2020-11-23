@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <Link rel="stylesheet" href="main.css"/>
+    <Link rel="stylesheet" href="projects.css"/>
+    <title>Banah's Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top " >
+        <div class="container col-lg-8">
+            <a href="#" class="navbar-brand"><span>BL</span></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li> -->
+                </ul>
+            </div>  
+        </div>   
+    </nav>
+
+    <!-- Body Content -->
+    <main>
+        <!-- Introduction -->
+        <div class="intro-container  col-lg-8" id="intro">
+            <div class="intro-text">
+                <h1 class="intro-header">Hi, I'm Banah.</h1>
+                <h2 class="intro-sub">A full stack web developer</h2>
+                <a href="/#projects" class="main-cta" style="text-decoration: none;" >See what I can do</a>
+            </div>
+            <img class="big-circle" src="./img/mid-eclipse.svg"/>
+            <img class="mid-circle" src="./img/mid-eclipse.svg"/>
+            <img class="sml-circle" src="./img/mid-eclipse.svg"/>
+        </div>
+
+        <!-- Projects -->
+        <div id="projects" class="projects-container   ">
+            <div class="title-container">
+                <h1 class="projects-title">Projects:</h1>
+            </div>           
+            <div class="card-container">
+                <ul class="project-list ">
+                    <li>
+                        <div class="card " style="width: 18rem;">
+                            <a href="https://student-manager-banah.netlify.app/" target="_blank" >
+                                <img src= "./img/./project-thumnnails/student-manager.png"  class="card-img-top"  alt="..."/>
+                                <div class = "overlay-color"><p class = "text">See Project <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg></p></div>
+                            </a> 
+                            <div class="card-body">
+                                <h5 class="card-title">Student Manager</h5>
+                                <p class="card-text">React.js application that involves fetching data from an api, the ability to add and filter data, and accordion drop downs.</p>
+                                <a href="https://student-manager-banah.netlify.app/" class="btn btn-danger" target="_blank">
+                                    See Project <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>                    
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card" style="width: 18rem; ">
+                            <a href="https://github.com/Banahlee/task-manager" target="_blank">
+                                <img src="./img/project-thumnnails/task-manager.png" class="card-img-top" alt="..."/>
+                                <div class = "overlay-color"><p class = "text">See Repo <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg></p></div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Task Manager</h5>
+                                <p class="card-text">Allows users to create lists and add tasks within those lists. 
+                                    Users can also update, delete, or cross-out their tasks. 
+                                    This full-stack application was built using Angular and Node.js/Express with MongoDB.</p>
+                                <a href="https://github.com/Banahlee/task-manager" class="btn btn-danger" target="_blank">
+                                    See Repo <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>                    
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card" style="width: 18rem;">
+                            <a href="https://ecommerce-store-banah-lee.netlify.app/" target="_blank">
+                                <img src="./img//project-thumnnails/ecom-store.png" class="card-img-top" alt="..."/>
+                                <div class = "overlay-color"><p class = "text">See Project <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg></p></div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Ecommerce Store</h5>
+                                <p class="card-text">Built with React.js. This ecommerce site showcases eight phones that can be added to cart. 
+                                    Users can increase the quantity of items in the cart or remove them.
+                                    The cart features a PayPal api which allows the user to check out using the cart balance.
+                                </p>
+                                <a href="https://ecommerce-store-banah-lee.netlify.app/" class="btn btn-danger" target="_blank">
+                                    See Project <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>                    
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card " style="width: 18rem;">
+                            <a href="https://github.com/Banahlee/lennys-pizzeria" target="_blank" >
+                                <img src= "./img/./project-thumnnails/lennys.png"  class="card-img-top"  alt="..."/>
+                                <div class = "overlay-color"><p class = "text">See Repo <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg></p></div>
+                            </a> 
+                            <div class="card-body">
+                                <h5 class="card-title">Lenny's Pizzeria</h5>
+                                <p class="card-text">Website built with React.js for a mock pizzeria. This project focuses on UI designs.</p>
+                                <a href="https://github.com/Banahlee/lennys-pizzeria" class="btn btn-danger" target="_blank">
+                                    See Repo <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>                    
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>  
+        </div>
+    </main>
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
